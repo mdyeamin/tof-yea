@@ -295,24 +295,24 @@
 							<div> <!--was form tag-->
 								<div class="row">
 									<div class="col-lg-6">
-										<!-- <input type="text" id="sendername" name="name" placeholder="Your Name"> -->
+										
 										<input type="text" id="sendername" placeholder="Your Mane">
 									</div>
 									<div class="col-lg-6">
-										<!-- <input type="email" id="to" name="email" placeholder="Your Email"> -->
+										
 										<input type="email" id="to">
 
 									</div>
 									<div class="col-12">
-										<!-- <input type="text" id="subject" name="sub" placeholder="Your Subject"> -->
+										
 										<input type="text" id="subject">
 									</div>
 									<div class="col-12">
-										<!-- <input type="text" id="replyto" name="sub" placeholder="replyto email"> -->
+										
 										<input type="email" id="replyto">
 									</div>
 									<div class="col-12">
-										<!-- <textarea name="message" id="message" placeholder="Your Message"></textarea> -->
+										
 										<textarea id="message" cols="30" rows="10"></textarea>
 									</div>
 									<div class="col-12">
@@ -411,7 +411,7 @@
 			replyto: document.querySelector("#replyto").value,
 			message: document.querySelector("#message").value,
 		};
-		var serviceID = "service_zmg7o2l"; // email service ID
+		var serviceID = "service_eahafle"; // email service ID
 		var templateID = "template_8qyyzwr" // email template ID
 		emailjs.send(serviceID, templateID, params)
 		.then( res=> {
