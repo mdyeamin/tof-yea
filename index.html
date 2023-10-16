@@ -5,19 +5,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Mohammad Sharkar</title>
-	<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> <!--emailJS API-->
-	<link rel="icon" href="assets/img/icon.jpg" type="image/gif" sizes="20x20">
+	<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> <!--emailJS API same for all-->
+	<!-- <link rel="icon" href="assets/img/icon.jpg" type="image/gif" sizes="20x20"> -->
 	<link rel="icon" href="assets/img/icon.jpg" type="image/gif" sizes="18x18">
-	<link rel="icon" href="assets/img/icon.jpg" type="image/gif" sizes="20x20">
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<!-- <link rel="icon" href="assets/img/icon.jpg" type="image/gif" sizes="20x20">  -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css"> <!--we need it-->
 	<link rel="stylesheet" href="assets/css/fontawesome.all.min.css">
 	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="assets/css/magnific-popup.css">
 	<link rel="stylesheet" href="assets/css/meanmenu.css">
 	<link rel="stylesheet" href="assets/css/normalize.css">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="assets/css/responsive.css">
+	<link rel="stylesheet" href="style.css"> <!--we need it-->
+	<link rel="stylesheet" href="assets/css/responsive.css"> 
 
 </head>
 
@@ -221,6 +221,7 @@
 							<h4>N/A</h4>
 						</div>
 					</div>
+					
 				</div>
 				<!-- Education -->
 
@@ -298,7 +299,7 @@
 								<div class="row">
 									<div class="col-lg-6">
 										
-										<input type="text" id="sendername" placeholder="Your Mane">
+										<input type="text" id="sendername" placeholder="Your Name">
 									</div>
 									<div class="col-lg-6">
 										
@@ -403,7 +404,7 @@
 <script>
 	function sendMail(){
 		(function(){
-			emailjs.init("cgP9zDx543l4zZ0sf") // Account public key
+			emailjs.init("cgP9zDx543l4zZ0sf") // Account public key (it will be change)
 		})();
 
 		var params = {
@@ -413,8 +414,8 @@
 			replyto: document.querySelector("#replyto").value,
 			message: document.querySelector("#message").value,
 		};
-		var serviceID = "service_eahafle"; // email service ID
-		var templateID = "template_8qyyzwr" // email template ID
+		var serviceID = "service_eahafle"; // email service ID (it will be change)
+		var templateID = "template_8qyyzwr" // email template ID (it will be change)
 		emailjs.send(serviceID, templateID, params)
 		.then( res=> {
 			alert("Email Send Successfully!")
